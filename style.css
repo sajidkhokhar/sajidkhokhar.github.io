@@ -430,7 +430,7 @@ section {
    Hero Section
    ------------------------------------------------------------- */
 .hero {
-  min-h: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   position: relative;
@@ -860,127 +860,170 @@ section {
 /* -------------------------------------------------------------
    Experience Section
    ------------------------------------------------------------- */
+.experience {
+  overflow: hidden;
+}
+
+/* Outer layout: stacked on mobile, two-column on desktop */
 .experience-layout {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 64px;
+  gap: 48px;
+  align-items: flex-start;
 }
 
 @media (min-width: 1024px) {
   .experience-layout {
-    grid-template-columns: 8fr 4fr;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 80px;
   }
 }
 
+/* ---- Timeline wrapper ---- */
 .timeline {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 48px;
 }
 
+/* Vertical rule: runs down the left side of the content area */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  /* mobile: sits just left of the dot */
+  left: 7px;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ---- Timeline item ---- */
+/* Mobile-first: single column, left-padded to clear the dot+line */
 .timeline-item {
   position: relative;
   padding-left: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
+/* Desktop: two-column grid with period on the left */
 @media (min-width: 768px) {
   .timeline-item {
     display: grid;
-    grid-template-columns: 3fr 9fr;
-    gap: 32px;
+    grid-template-columns: 160px 1fr;
+    column-gap: 40px;
     padding-left: 0;
+  }
+
+  /* Shift the vertical rule to sit between the two columns */
+  .timeline::before {
+    left: 167px;
   }
 }
 
+/* ---- Period label ---- */
 .timeline-period {
   color: var(--accent);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
-  margin-bottom: 8px;
+  white-space: nowrap;
+  /* Mobile: sits above the content, flush left */
+  margin-bottom: 6px;
 }
 
 @media (min-width: 768px) {
   .timeline-period {
     text-align: right;
-    margin-bottom: 0;
     padding-top: 4px;
+    margin-bottom: 0;
   }
 }
 
+/* ---- Content pane ---- */
 .timeline-content {
   position: relative;
-}
-
-/* Timeline vertical line */
-.timeline-item::after {
-  content: '';
-  position: absolute;
-  left: 8px;
-  top: 24px;
-  bottom: -56px;
-  width: 1px;
-  background-color: var(--border);
-}
-
-.timeline-item:last-child::after {
-  display: none;
-}
-
-/* Timeline dot */
-.timeline-dot {
-  position: absolute;
-  left: 0;
-  top: 6px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: var(--bg-primary);
-  border: 2px solid var(--accent);
-  z-index: 10;
+  min-width: 0;
 }
 
 @media (min-width: 768px) {
-  .timeline-item::after {
-    left: calc(25% + 7px);
-  }
-
-  .timeline-dot {
-    left: -25px;
+  .timeline-content {
+    padding-left: 28px;
   }
 }
 
+/* ---- Dot ---- */
+.timeline-dot {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  border: 3px solid var(--bg-primary);
+  z-index: 2;
+  /* Mobile: vertically centred on the period text line */
+  top: 2px;
+  left: 1px;
+}
+
+@media (min-width: 768px) {
+
+  /* Desktop: dot lives inside .timeline-content, offset left to straddle the rule */
+  .timeline-dot {
+    top: 6px;
+    left: -7px;
+  }
+}
+
+/* ---- Typography inside timeline ---- */
 .timeline-role {
-  font-size: 24px;
+  font-size: clamp(20px, 4vw, 26px);
   font-weight: 700;
+  line-height: 1.2;
   margin-bottom: 4px;
+  /* On mobile the dot is above; add a small top indent so text clears it */
+  padding-top: 2px;
+}
+
+@media (min-width: 768px) {
+  .timeline-role {
+    padding-top: 0;
+  }
 }
 
 .timeline-company {
-  font-size: 18px;
+  font-size: 16px;
   color: var(--text-secondary);
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .timeline-desc {
-  font-size: 16px;
+  font-size: 15px;
   color: var(--text-secondary);
-  margin-bottom: 24px;
+  line-height: 1.7;
+  margin-bottom: 20px;
 }
 
+/* ---- Achievement list ---- */
 .timeline-achievements {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+  padding-left: 0;
 }
 
 .achievement-item {
-  font-size: 14px;
-  color: var(--text-secondary);
   display: flex;
   align-items: flex-start;
-  gap: 12px;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  word-break: break-word;
 }
 
 .achievement-bullet {
@@ -1002,14 +1045,27 @@ section {
   font-weight: 600;
 }
 
-/* Highlight Sidebar card */
+/* ---- Sidebar ---- */
+.sidebar-container {
+  width: 100%;
+}
+
 .sidebar-card {
-  padding: 32px;
+  padding: 28px;
   border-radius: 24px;
   background-color: var(--bg-secondary);
   border: 1px solid var(--border);
-  position: sticky;
-  top: 120px;
+  /* Sticky only on desktop where there's enough height */
+  position: relative;
+  top: auto;
+}
+
+@media (min-width: 1024px) {
+  .sidebar-card {
+    position: sticky;
+    top: 120px;
+    padding: 32px;
+  }
 }
 
 .sidebar-title {
@@ -1021,18 +1077,31 @@ section {
 .highlights-list {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 28px;
+}
+
+/* On mobile, lay highlights out in a row if space permits */
+@media (max-width: 767px) {
+  .highlights-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .highlight-row {
+    flex: 1 1 120px;
+  }
 }
 
 .highlight-row {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
 }
 
 .highlight-icon-box {
-  width: 56px;
-  height: 56px;
+  width: 52px;
+  height: 52px;
   border-radius: 16px;
   background-color: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--border);
@@ -1040,16 +1109,17 @@ section {
   align-items: center;
   justify-content: center;
   color: var(--accent);
+  flex-shrink: 0;
 }
 
 .highlight-num {
-  font-size: 28px;
+  font-size: clamp(20px, 4vw, 28px);
   font-weight: 800;
   line-height: 1.2;
 }
 
 .highlight-text {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--text-secondary);
 }
 
@@ -1244,7 +1314,9 @@ section {
   margin-bottom: 16px;
 }
 
-/* Contact section: single column info layout */
+/* -------------------------------------------------------------
+   Contact Section
+   ------------------------------------------------------------- */
 .contact-info-only {
   max-width: 680px;
 }
@@ -1393,7 +1465,6 @@ section {
   transform: translateY(0);
 }
 
-/* Add custom transition delays for staggered grids */
 .delay-100 {
   transition-delay: 100ms;
 }
@@ -1412,59 +1483,4 @@ section {
 
 .delay-500 {
   transition-delay: 500ms;
-}
-
-.experience-layout {
-  display: grid;
-  grid-template-columns: 1fr 350px;
-  gap: 80px;
-  align-items: flex-start;
-}
-
-.timeline-item {
-  display: grid;
-  grid-template-columns: 180px 1fr;
-  gap: 40px;
-  position: relative;
-}
-
-.timeline-content {
-  position: relative;
-  padding-left: 24px;
-}
-
-.timeline-dot {
-  position: absolute;
-  left: -9px;
-  top: 12px;
-  width: 14px;
-  height: 14px;
-  background: #007aff;
-  border-radius: 50%;
-  border: 3px solid #0a0a0a;
-  z-index: 2;
-}
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 186px;
-  top: 0;
-  width: 1px;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.timeline {
-  position: relative;
-}
-
-.timeline-role {
-  margin-top: 0;
-  line-height: 1.1;
-}
-
-.timeline-period {
-  padding-top: 6px;
-  white-space: nowrap;
 }
