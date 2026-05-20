@@ -27,6 +27,14 @@
   --transition-quick: all 0.2s ease;
 }
 
+.logo-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+}
+
 /* Global Styles */
 * {
   box-sizing: border-box;
@@ -1483,4 +1491,29 @@ section {
 
 .delay-500 {
   transition-delay: 500ms;
+}
+
+/* -------------------------------------------------------------
+   Contact — LinkedIn card accent & arrow
+   ------------------------------------------------------------- */
+
+/* Arrow icon sits flush to the right of the card */
+.contact-card-arrow {
+  margin-left: auto;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  transition: var(--transition-quick);
+}
+
+/* LinkedIn-specific hover: icon box goes LinkedIn blue */
+.contact-card-linkedin:hover .contact-icon-box {
+  color: #ffffff;
+  background-color: #0077b5;
+  border-color: #0077b5;
+}
+
+/* Arrow nudges diagonally on hover */
+.contact-card-linkedin:hover .contact-card-arrow {
+  color: #0077b5;
+  transform: translate(2px, -2px);
 }

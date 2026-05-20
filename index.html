@@ -7,8 +7,6 @@
   <title>Sajid Khokhar | iOS Developer Portfolio</title>
   <meta name="description"
     content="Portfolio of Sajid Khokhar, a professional iOS Developer specializing in Swift, SwiftUI, UIKit, AI integrations, and production-grade Apple ecosystem applications." />
-
-  <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -18,7 +16,7 @@
   <header class="header" id="header">
     <div class="container nav-container">
       <a href="#" class="logo" id="nav-logo">
-        <span class="logo-badge">SK</span>
+        <img src="image.jpg" alt="Sajid Khokhar" class="logo-avatar" />
         Sajid Khokhar
       </a>
 
@@ -95,7 +93,7 @@
               </svg>
             </a>
             <a href="#projects" class="btn btn-secondary">View Projects</a>
-            <a href="#contact" class="btn-icon-only" aria-label="Send Email">
+            <a href="mailto:khokharsajid166@gmail.com" class="btn-icon-only" aria-label="Send Email">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
@@ -110,7 +108,6 @@
     <!-- About Section -->
     <section class="about" id="about">
       <div class="container">
-        <!-- Section Header -->
         <div class="section-header reveal">
           <h2 class="section-title">About Me</h2>
           <p class="section-subtitle">iOS Developer specializing in Swift, SwiftUI, AI integrations, and
@@ -147,7 +144,6 @@
           <!-- Skills Sidebar -->
           <div class="skills-sidebar reveal delay-200">
             <div class="core-skills-grid">
-              <!-- iOS & macOS -->
               <div class="skill-card">
                 <div class="skill-card-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -160,7 +156,6 @@
                 <p>SwiftUI, UIKit, AppKit</p>
               </div>
 
-              <!-- Data & Storage -->
               <div class="skill-card">
                 <div class="skill-card-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -174,7 +169,6 @@
                 <p>Core Data, Realm, Local Persistence</p>
               </div>
 
-              <!-- Backend & APIs -->
               <div class="skill-card">
                 <div class="skill-card-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -186,7 +180,6 @@
                 <p>Firebase, REST, AI APIs</p>
               </div>
 
-              <!-- Architecture -->
               <div class="skill-card">
                 <div class="skill-card-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -201,7 +194,6 @@
               </div>
             </div>
 
-            <!-- Tools & Tech -->
             <div class="tools-box">
               <h3>Tools & Technologies</h3>
               <div class="tags-flex">
@@ -227,7 +219,6 @@
     <!-- Projects Section -->
     <section class="projects bg-dark-alt" id="projects">
       <div class="container">
-        <!-- Section Header -->
         <div class="section-header reveal">
           <h2 class="section-title">Featured Projects</h2>
           <p class="section-subtitle">A selection of production-grade iOS and macOS applications I've built, focusing on
@@ -261,29 +252,11 @@
                     </span>
                   </div>
                 </div>
-                <div class="project-links">
-                  <!-- <a href="#" class="project-link-icon" aria-label="View on GitHub">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
-                      stroke-linecap="round" stroke-linejoin="round">
-                      <path
-                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                      </path>
-                    </svg>
-                  </a> -->
-                  <!-- <a href="#" class="project-link-icon app-store" aria-label="View on App Store">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                      <path
-                        d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z" />
-                    </svg>
-                  </a> -->
-                </div>
+                <div class="project-links"></div>
               </div>
-
-              <p class="project-desc">
-                AI-powered translation application supporting text, image, PDF, and live camera translation with offline
-                mode, speech playback, smart suggestions, and real-time conversation features.
+              <p class="project-desc">AI-powered translation application supporting text, image, PDF, and live camera
+                translation with offline mode, speech playback, smart suggestions, and real-time conversation features.
               </p>
-
               <div class="project-footer">
                 <div class="features-box">
                   <span class="features-label">Key Features</span>
@@ -298,7 +271,6 @@
                     <li class="feature-item"><span class="feature-dot"></span>Real-time Conversation</li>
                   </ul>
                 </div>
-
                 <div class="tech-tags">
                   <span class="tech-tag">Swift</span>
                   <span class="tech-tag">SwiftUI</span>
@@ -327,29 +299,10 @@
                     </span>
                   </div>
                 </div>
-                <div class="project-links">
-                  <!-- <a href="#" class="project-link-icon" aria-label="View on GitHub">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
-                      stroke-linecap="round" stroke-linejoin="round">
-                      <path
-                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                      </path>
-                    </svg>
-                  </a> -->
-                  <!-- <a href="#" class="project-link-icon app-store" aria-label="View on App Store">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                      <path
-                        d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z" />
-                    </svg>
-                  </a> -->
-                </div>
+                <div class="project-links"></div>
               </div>
-
-              <p class="project-desc">
-                Cross-platform playlist transfer application supporting Apple Music, Spotify, and Amazon Music with
-                collaborative playlist management and real-time synchronization.
-              </p>
-
+              <p class="project-desc">Cross-platform playlist transfer application supporting Apple Music, Spotify, and
+                Amazon Music with collaborative playlist management and real-time synchronization.</p>
               <div class="project-footer">
                 <div class="features-box">
                   <span class="features-label">Key Features</span>
@@ -362,7 +315,6 @@
                     <li class="feature-item"><span class="feature-dot"></span>Permission Management</li>
                   </ul>
                 </div>
-
                 <div class="tech-tags">
                   <span class="tech-tag">Swift</span>
                   <span class="tech-tag">SwiftUI</span>
@@ -391,29 +343,10 @@
                     </span>
                   </div>
                 </div>
-                <div class="project-links">
-                  <!-- <a href="#" class="project-link-icon" aria-label="View on GitHub">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
-                      stroke-linecap="round" stroke-linejoin="round">
-                      <path
-                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                      </path>
-                    </svg>
-                  </a> -->
-                  <!-- <a href="#" class="project-link-icon app-store" aria-label="View on App Store">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                      <path
-                        d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z" />
-                    </svg>
-                  </a> -->
-                </div>
+                <div class="project-links"></div>
               </div>
-
-              <p class="project-desc">
-                AI-powered sketch-to-art generation app with modern SwiftUI interface and advanced image processing
-                capabilities.
-              </p>
-
+              <p class="project-desc">AI-powered sketch-to-art generation app with modern SwiftUI interface and advanced
+                image processing capabilities.</p>
               <div class="project-footer">
                 <div class="features-box">
                   <span class="features-label">Key Features</span>
@@ -424,7 +357,6 @@
                     <li class="feature-item"><span class="feature-dot"></span>Image Processing</li>
                   </ul>
                 </div>
-
                 <div class="tech-tags">
                   <span class="tech-tag">Swift</span>
                   <span class="tech-tag">SwiftUI</span>
@@ -451,29 +383,10 @@
                     </span>
                   </div>
                 </div>
-                <div class="project-links">
-                  <!-- <a href="#" class="project-link-icon" aria-label="View on GitHub">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
-                      stroke-linecap="round" stroke-linejoin="round">
-                      <path
-                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                      </path>
-                    </svg>
-                  </a> -->
-                  <!-- <a href="#" class="project-link-icon app-store" aria-label="View on App Store">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                      <path
-                        d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z" />
-                    </svg>
-                  </a> -->
-                </div>
+                <div class="project-links"></div>
               </div>
-
-              <p class="project-desc">
-                Personalized nutrition and calorie tracking application with BMI calculation, nutrient analysis, and
-                dietary goal management.
-              </p>
-
+              <p class="project-desc">Personalized nutrition and calorie tracking application with BMI calculation,
+                nutrient analysis, and dietary goal management.</p>
               <div class="project-footer">
                 <div class="features-box">
                   <span class="features-label">Key Features</span>
@@ -485,7 +398,6 @@
                     <li class="feature-item"><span class="feature-dot"></span>Goal Management</li>
                   </ul>
                 </div>
-
                 <div class="tech-tags">
                   <span class="tech-tag">Swift</span>
                   <span class="tech-tag">SwiftUI</span>
@@ -514,29 +426,10 @@
                     </span>
                   </div>
                 </div>
-                <div class="project-links">
-                  <!-- <a href="#" class="project-link-icon" aria-label="View on GitHub">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
-                      stroke-linecap="round" stroke-linejoin="round">
-                      <path
-                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                      </path>
-                    </svg>
-                  </a> -->
-                  <!-- <a href="#" class="project-link-icon app-store" aria-label="View on App Store">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                      <path
-                        d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z" />
-                    </svg>
-                  </a> -->
-                </div>
+                <div class="project-links"></div>
               </div>
-
-              <p class="project-desc">
-                Native macOS Gmail menu bar application with inbox access, thread navigation, compose support, and
-                Google OAuth integration.
-              </p>
-
+              <p class="project-desc">Native macOS Gmail menu bar application with inbox access, thread navigation,
+                compose support, and Google OAuth integration.</p>
               <div class="project-footer">
                 <div class="features-box">
                   <span class="features-label">Key Features</span>
@@ -548,7 +441,6 @@
                     <li class="feature-item"><span class="feature-dot"></span>Native macOS Experience</li>
                   </ul>
                 </div>
-
                 <div class="tech-tags">
                   <span class="tech-tag">Swift</span>
                   <span class="tech-tag">SwiftUI</span>
@@ -575,29 +467,10 @@
                     </span>
                   </div>
                 </div>
-                <div class="project-links">
-                  <!-- <a href="#" class="project-link-icon" aria-label="View on GitHub">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
-                      stroke-linecap="round" stroke-linejoin="round">
-                      <path
-                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                      </path>
-                    </svg>
-                  </a> -->
-                  <!-- <a href="#" class="project-link-icon app-store" aria-label="View on App Store">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                      <path
-                        d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z" />
-                    </svg>
-                  </a> -->
-                </div>
+                <div class="project-links"></div>
               </div>
-
-              <p class="project-desc">
-                Worked on UI/UX improvements and feature enhancements for live App Store applications focused on snore
-                tracking, fasting, and ingredient analysis.
-              </p>
-
+              <p class="project-desc">Worked on UI/UX improvements and feature enhancements for live App Store
+                applications focused on snore tracking, fasting, and ingredient analysis.</p>
               <div class="project-footer">
                 <div class="features-box">
                   <span class="features-label">Key Features</span>
@@ -608,7 +481,6 @@
                     <li class="feature-item"><span class="feature-dot"></span>UI/UX Revamp</li>
                   </ul>
                 </div>
-
                 <div class="tech-tags">
                   <span class="tech-tag">Swift</span>
                   <span class="tech-tag">SwiftUI</span>
@@ -626,7 +498,6 @@
     <!-- Experience Section -->
     <section class="experience" id="experience">
       <div class="container">
-        <!-- Section Header -->
         <div class="section-header reveal">
           <h2 class="section-title">Experience</h2>
           <p class="section-subtitle">My professional journey in building robust iOS applications and delivering value.
@@ -641,7 +512,6 @@
             <div class="timeline-item">
               <div class="timeline-period">Jun 2023 - Present</div>
               <div class="timeline-content">
-                <!-- <span class="timeline-dot"></span> -->
                 <h3 class="timeline-role">iOS Developer</h3>
                 <h4 class="timeline-company">Pixster Studio</h4>
                 <p class="timeline-desc">Engineered and shipped multiple production iOS and macOS applications.</p>
@@ -672,7 +542,6 @@
             <div class="timeline-item">
               <div class="timeline-period">Jan 2023 - Jun 2023</div>
               <div class="timeline-content">
-                <!-- <span class="timeline-dot"></span> -->
                 <h3 class="timeline-role">iOS Developer Intern</h3>
                 <h4 class="timeline-company">Yudiz Solutions</h4>
                 <p class="timeline-desc">Collaborated within an agile iOS development team.</p>
@@ -709,7 +578,6 @@
                     <div class="highlight-text">Years Experience</div>
                   </div>
                 </div>
-
                 <div class="highlight-row">
                   <div class="highlight-icon-box">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
@@ -723,7 +591,6 @@
                     <div class="highlight-text">Apps Shipped</div>
                   </div>
                 </div>
-
                 <div class="highlight-row">
                   <div class="highlight-icon-box">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
@@ -749,7 +616,6 @@
     <!-- Education Section -->
     <section class="education bg-dark-alt" id="education">
       <div class="container">
-        <!-- Section Header -->
         <div class="section-header reveal">
           <h2 class="section-title">Education</h2>
           <p class="section-subtitle">My academic background and qualifications.</p>
@@ -757,7 +623,6 @@
         </div>
 
         <div class="education-grid">
-          <!-- Degree 1: M.Sc. IT -->
           <article class="education-card reveal">
             <div class="education-glow"></div>
             <div class="education-icon-box">
@@ -769,7 +634,6 @@
             </div>
             <h3 class="education-degree">M.Sc. Information Technology</h3>
             <h4 class="education-college">GLS University</h4>
-
             <div class="education-details">
               <div class="edu-meta">
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
@@ -793,7 +657,6 @@
             </div>
           </article>
 
-          <!-- Degree 2: BCA -->
           <article class="education-card reveal delay-200">
             <div class="education-glow"></div>
             <div class="education-icon-box">
@@ -805,7 +668,6 @@
             </div>
             <h3 class="education-degree">Bachelor of Computer Applications</h3>
             <h4 class="education-college">JG College of Computer Applications, Gujarat University</h4>
-
             <div class="education-details">
               <div class="edu-meta">
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
@@ -835,7 +697,6 @@
     <!-- Technical Proficiency Section -->
     <section class="skills" id="skills">
       <div class="container">
-        <!-- Section Header -->
         <div class="section-header reveal">
           <h2 class="section-title">Technical Proficiency</h2>
           <p class="section-subtitle">A comprehensive overview of my technical skills, tools, and areas of expertise in
@@ -843,112 +704,79 @@
           <div class="section-line"></div>
         </div>
 
-        <!-- Skill Bars Grid -->
         <div class="skills-bars-grid">
-          <!-- Languages & Frameworks -->
           <div class="skills-category-card reveal">
             <h3 class="skills-category-title">Languages & Frameworks</h3>
-
             <div class="skill-bar-item">
-              <div class="skill-bar-labels">
-                <span class="skill-name">Swift</span>
-                <span class="skill-pct">95%</span>
+              <div class="skill-bar-labels"><span class="skill-name">Swift</span><span class="skill-pct">95%</span>
               </div>
               <div class="skill-track">
                 <div class="skill-fill animate-bar" data-width="95%"></div>
               </div>
             </div>
-
             <div class="skill-bar-item">
-              <div class="skill-bar-labels">
-                <span class="skill-name">SwiftUI</span>
-                <span class="skill-pct">95%</span>
+              <div class="skill-bar-labels"><span class="skill-name">SwiftUI</span><span class="skill-pct">95%</span>
               </div>
               <div class="skill-track">
                 <div class="skill-fill animate-bar" data-width="95%"></div>
               </div>
             </div>
-
             <div class="skill-bar-item">
-              <div class="skill-bar-labels">
-                <span class="skill-name">UIKit</span>
-                <span class="skill-pct">88%</span>
+              <div class="skill-bar-labels"><span class="skill-name">UIKit</span><span class="skill-pct">88%</span>
               </div>
               <div class="skill-track">
                 <div class="skill-fill animate-bar" data-width="88%"></div>
               </div>
             </div>
-
             <div class="skill-bar-item">
-              <div class="skill-bar-labels">
-                <span class="skill-name">Combine</span>
-                <span class="skill-pct">82%</span>
+              <div class="skill-bar-labels"><span class="skill-name">Combine</span><span class="skill-pct">82%</span>
               </div>
               <div class="skill-track">
                 <div class="skill-fill animate-bar" data-width="82%"></div>
               </div>
             </div>
-
             <div class="skill-bar-item">
-              <div class="skill-bar-labels">
-                <span class="skill-name">Objective-C</span>
-                <span class="skill-pct">70%</span>
-              </div>
+              <div class="skill-bar-labels"><span class="skill-name">Objective-C</span><span
+                  class="skill-pct">70%</span></div>
               <div class="skill-track">
                 <div class="skill-fill animate-bar" data-width="70%"></div>
               </div>
             </div>
           </div>
 
-          <!-- Backend & Tools -->
           <div class="skills-category-card reveal delay-200">
             <h3 class="skills-category-title">Backend & Tools</h3>
-
             <div class="skill-bar-item">
-              <div class="skill-bar-labels">
-                <span class="skill-name">Firebase Auth & Firestore</span>
-                <span class="skill-pct">90%</span>
-              </div>
+              <div class="skill-bar-labels"><span class="skill-name">Firebase Auth & Firestore</span><span
+                  class="skill-pct">90%</span></div>
               <div class="skill-track">
                 <div class="skill-fill animate-bar" data-width="90%"></div>
               </div>
             </div>
-
             <div class="skill-bar-item">
-              <div class="skill-bar-labels">
-                <span class="skill-name">Xcode & TestFlight</span>
-                <span class="skill-pct">95%</span>
-              </div>
+              <div class="skill-bar-labels"><span class="skill-name">Xcode & TestFlight</span><span
+                  class="skill-pct">95%</span></div>
               <div class="skill-track">
                 <div class="skill-fill animate-bar" data-width="95%"></div>
               </div>
             </div>
-
             <div class="skill-bar-item">
-              <div class="skill-bar-labels">
-                <span class="skill-name">Git & Version Control</span>
-                <span class="skill-pct">92%</span>
-              </div>
+              <div class="skill-bar-labels"><span class="skill-name">Git & Version Control</span><span
+                  class="skill-pct">92%</span></div>
               <div class="skill-track">
                 <div class="skill-fill animate-bar" data-width="92%"></div>
               </div>
             </div>
-
             <div class="skill-bar-item">
-              <div class="skill-bar-labels">
-                <span class="skill-name">Crashlytics & Analytics</span>
-                <span class="skill-pct">85%</span>
-              </div>
+              <div class="skill-bar-labels"><span class="skill-name">Crashlytics & Analytics</span><span
+                  class="skill-pct">85%</span></div>
               <div class="skill-track">
                 <div class="skill-fill animate-bar" data-width="85%"></div>
               </div>
             </div>
-
             <div class="skill-bar-item">
-              <div class="skill-bar-labels">
-                <span class="skill-name">Postman & API Testing</span>
-                <span class="skill-pct">85%</span>
-              </div>
+              <div class="skill-bar-labels"><span class="skill-name">Postman & API Testing</span><span
+                  class="skill-pct">85%</span></div>
               <div class="skill-track">
                 <div class="skill-fill animate-bar" data-width="85%"></div>
               </div>
@@ -956,9 +784,7 @@
           </div>
         </div>
 
-        <!-- Tag Categories Grid -->
         <div class="skills-tags-grid">
-          <!-- APIs & SDKs -->
           <div class="skills-tag-category reveal">
             <h4>APIs & SDKs</h4>
             <div class="tags-flex">
@@ -971,8 +797,6 @@
               <span class="tag">Meta Ads</span>
             </div>
           </div>
-
-          <!-- Core Expertise -->
           <div class="skills-tag-category reveal delay-100">
             <h4>Core Expertise</h4>
             <div class="tags-flex">
@@ -984,8 +808,6 @@
               <span class="tag">A/B Testing</span>
             </div>
           </div>
-
-          <!-- Platforms -->
           <div class="skills-tag-category reveal delay-200">
             <h4>Platforms</h4>
             <div class="tags-flex">
@@ -1002,8 +824,6 @@
     <section class="contact" id="contact">
       <div class="container">
         <div class="contact-info-only reveal">
-          <!-- Contact info (no form) -->
-          <!-- Section Header -->
           <div class="section-header" style="margin-bottom: 0;">
             <h2 class="section-title">Let's Build Something Amazing Together.</h2>
             <p class="section-subtitle" style="margin-top: 16px;">Currently open for new opportunities. Whether you have
@@ -1011,8 +831,9 @@
             <div class="section-line"></div>
           </div>
 
-          <!-- Channels -->
+          <!-- Contact Channels — email, phone, location, LinkedIn all unified -->
           <div class="contact-channels">
+
             <!-- Email -->
             <a href="mailto:khokharsajid166@gmail.com" class="contact-card">
               <div class="contact-icon-box">
@@ -1046,7 +867,7 @@
 
             <!-- Location -->
             <div class="contact-card">
-              <div class="contact-icon-box" style="cursor: default;">
+              <div class="contact-icon-box">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
@@ -1058,27 +879,31 @@
                 <div class="contact-card-value">Ahmedabad, Gujarat, India</div>
               </div>
             </div>
-          </div>
 
-          <!-- Social Links -->
-          <div class="social-links">
+            <!-- LinkedIn — same card style as above -->
             <a href="https://www.linkedin.com/in/sajid-khokhar-8a3461150" target="_blank" rel="noopener noreferrer"
-              class="social-icon-btn linkedin" aria-label="LinkedIn Profile">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                <rect x="2" y="9" width="4" height="12"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
+              class="contact-card contact-card-linkedin">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-card-label">LinkedIn</div>
+                <div class="contact-card-value">sajid-khokhar</div>
+              </div>
+              <!-- External link arrow -->
+              <svg class="contact-card-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
               </svg>
             </a>
-            <!-- <a href="#" class="social-icon-btn github" aria-label="GitHub Profile">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                </path>
-              </svg>
-            </a> -->
+
           </div>
         </div>
       </div>
@@ -1098,9 +923,6 @@
     </div>
   </footer>
 
-
-
-  <!-- Vanilla Javascript File -->
   <script src="script.js"></script>
 </body>
 
