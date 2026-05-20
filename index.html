@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sajid Khokhar | iOS Developer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Sajid Khokhar, a professional iOS Developer specializing in Swift, SwiftUI, UIKit, AI integrations, and production-grade Apple ecosystem applications." />
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#" class="logo" id="nav-logo">
+        <span class="logo-badge">SK</span>
+        Sajid Khokhar
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#contact" class="nav-cta">Hire Me</a>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-menu">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-close"
+          style="display: none;">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#education" class="mobile-link">Education</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <a href="#contact" class="btn btn-primary" style="margin-top: 12px; width: 100%;">Hire Me</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+      <div class="container hero-container">
+        <div class="reveal">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Available for new opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Building the Future of iOS, <br />
+            <span class="hero-gradient-text">One Pixel at a Time.</span>
+          </h1>
+
+          <p class="hero-desc">
+            I'm <strong>Sajid Khokhar</strong>, an iOS Developer specializing in Swift, SwiftUI, AI integrations, and
+            production-grade Apple ecosystem applications.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              Hire Me
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#projects" class="btn btn-secondary">View Projects</a>
+            <a href="#contact" class="btn-icon-only" aria-label="Send Email">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">iOS Developer specializing in Swift, SwiftUI, AI integrations, and
+            production-grade Apple ecosystem applications.</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Bio -->
+          <div class="about-bio reveal">
+            <div class="location-tag">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Ahmedabad, Gujarat, India</span>
+            </div>
+            <p>
+              With <strong>2+ years of hands-on experience</strong>, I build production-grade iOS and macOS applications
+              across AI, health, productivity, and media domains.
+            </p>
+            <p>
+              I am highly skilled in <strong>Swift, SwiftUI, UIKit, Firebase</strong>, and complex API integrations. I
+              have extensive experience implementing subscription systems and handling end-to-end App Store deployments.
+            </p>
+            <p>
+              My focus is always on developing complete applications from architecture to launch, prioritizing
+              performance, scalability, and delivering modern, fluid user experiences that feel native to the Apple
+              ecosystem.
+            </p>
+          </div>
+
+          <!-- Skills Sidebar -->
+          <div class="skills-sidebar reveal delay-200">
+            <div class="core-skills-grid">
+              <!-- iOS & macOS -->
+              <div class="skill-card">
+                <div class="skill-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                  </svg>
+                </div>
+                <h3>iOS & macOS</h3>
+                <p>SwiftUI, UIKit, AppKit</p>
+              </div>
+
+              <!-- Data & Storage -->
+              <div class="skill-card">
+                <div class="skill-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                    <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
+                  </svg>
+                </div>
+                <h3>Data & Storage</h3>
+                <p>Core Data, Realm, Local Persistence</p>
+              </div>
+
+              <!-- Backend & APIs -->
+              <div class="skill-card">
+                <div class="skill-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                  </svg>
+                </div>
+                <h3>Backend & APIs</h3>
+                <p>Firebase, REST, AI APIs</p>
+              </div>
+
+              <!-- Architecture -->
+              <div class="skill-card">
+                <div class="skill-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 16l4-4-4-4"></path>
+                    <path d="M6 8l-4 4 4 4"></path>
+                    <path d="M14.5 4l-5 16"></path>
+                  </svg>
+                </div>
+                <h3>Architecture</h3>
+                <p>MVVM, Clean Architecture</p>
+              </div>
+            </div>
+
+            <!-- Tools & Tech -->
+            <div class="tools-box">
+              <h3>Tools & Technologies</h3>
+              <div class="tags-flex">
+                <span class="tag">Xcode</span>
+                <span class="tag">Git</span>
+                <span class="tag">Postman</span>
+                <span class="tag">Figma</span>
+                <span class="tag">TestFlight</span>
+                <span class="tag">App Store Connect</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">Qonversion</span>
+                <span class="tag">Singular SDK</span>
+                <span class="tag">Spotify API</span>
+                <span class="tag">Google APIs</span>
+                <span class="tag">Meta Ads</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects bg-dark-alt" id="projects">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">A selection of production-grade iOS and macOS applications I've built, focusing on
+            performance, architecture, and premium user experiences.</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Translate AI -->
+          <article class="project-card p-gradient-blue-purple reveal">
+            <div class="project-content">
+              <div class="project-header">
+                <div>
+                  <h3 class="project-title">Translate AI</h3>
+                  <div class="platform-badges">
+                    <span class="badge">
+                      <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor">
+                        <path
+                          d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z" />
+                      </svg>
+                      iOS
+                    </span>
+                    <span class="badge">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                      </svg>
+                      macOS
+                    </span>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <!-- <a href="#" class="project-link-icon" aria-label="View on GitHub">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                      </path>
+                    </svg>
+                  </a> -->
+                  <!-- <a href="#" class="project-link-icon app-store" aria-label="View on App Store">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                      <path
+                        d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z" />
+                    </svg>
+                  </a> -->
+                </div>
+              </div>
+
+              <p class="project-desc">
+                AI-powered translation application supporting text, image, PDF, and live camera translation with offline
+                mode, speech playback, smart suggestions, and real-time conversation features.
+              </p>
+
+              <div class="project-footer">
+                <div class="features-box">
+                  <span class="features-label">Key Features</span>
+                  <ul class="features-list">
+                    <li class="feature-item"><span class="feature-dot"></span>Text Translation</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Image Translation</li>
+                    <li class="feature-item"><span class="feature-dot"></span>PDF Translation</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Live Camera Translation</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Offline Mode</li>
+                    <li class="feature-item"><span class="feature-dot"></span>AI Summaries</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Speech Playback</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Real-time Conversation</li>
+                  </ul>
+                </div>
+
+                <div class="tech-tags">
+                  <span class="tech-tag">Swift</span>
+                  <span class="tech-tag">SwiftUI</span>
+                  <span class="tech-tag">CoreML</span>
+                  <span class="tech-tag">Firebase</span>
+                  <span class="tech-tag">AVFoundation</span>
+                  <span class="tech-tag">AI APIs</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Playlist Manager -->
+          <article class="project-card p-gradient-green-emerald reveal delay-100">
+            <div class="project-content">
+              <div class="project-header">
+                <div>
+                  <h3 class="project-title">Playlist Manager</h3>
+                  <div class="platform-badges">
+                    <span class="badge">
+                      <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor">
+                        <path
+                          d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z" />
+                      </svg>
+                      iOS
+                    </span>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <!-- <a href="#" class="project-link-icon" aria-label="View on GitHub">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                      </path>
+                    </svg>
+                  </a> -->
+                  <!-- <a href="#" class="project-link-icon app-store" aria-label="View on App Store">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                      <path
+                        d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z" />
+                    </svg>
+                  </a> -->
+                </div>
+              </div>
+
+              <p class="project-desc">
+                Cross-platform playlist transfer application supporting Apple Music, Spotify, and Amazon Music with
+                collaborative playlist management and real-time synchronization.
+              </p>
+
+              <div class="project-footer">
+                <div class="features-box">
+                  <span class="features-label">Key Features</span>
+                  <ul class="features-list">
+                    <li class="feature-item"><span class="feature-dot"></span>Spotify Integration</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Apple Music Integration</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Amazon Music Integration</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Real-time Sync</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Collaborative Playlists</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Permission Management</li>
+                  </ul>
+                </div>
+
+                <div class="tech-tags">
+                  <span class="tech-tag">Swift</span>
+                  <span class="tech-tag">SwiftUI</span>
+                  <span class="tech-tag">Firebase</span>
+                  <span class="tech-tag">Spotify API</span>
+                  <span class="tech-tag">Apple Music API</span>
+                  <span class="tech-tag">Amazon Music API</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Scribble AI -->
+          <article class="project-card p-gradient-indigo-blue reveal">
+            <div class="project-content">
+              <div class="project-header">
+                <div>
+                  <h3 class="project-title">Scribble AI</h3>
+                  <div class="platform-badges">
+                    <span class="badge">
+                      <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor">
+                        <path
+                          d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z" />
+                      </svg>
+                      iOS
+                    </span>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <!-- <a href="#" class="project-link-icon" aria-label="View on GitHub">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                      </path>
+                    </svg>
+                  </a> -->
+                  <!-- <a href="#" class="project-link-icon app-store" aria-label="View on App Store">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                      <path
+                        d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z" />
+                    </svg>
+                  </a> -->
+                </div>
+              </div>
+
+              <p class="project-desc">
+                AI-powered sketch-to-art generation app with modern SwiftUI interface and advanced image processing
+                capabilities.
+              </p>
+
+              <div class="project-footer">
+                <div class="features-box">
+                  <span class="features-label">Key Features</span>
+                  <ul class="features-list">
+                    <li class="feature-item"><span class="feature-dot"></span>Sketch to Art</li>
+                    <li class="feature-item"><span class="feature-dot"></span>AI Image Generation</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Modern UI</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Image Processing</li>
+                  </ul>
+                </div>
+
+                <div class="tech-tags">
+                  <span class="tech-tag">Swift</span>
+                  <span class="tech-tag">SwiftUI</span>
+                  <span class="tech-tag">CoreImage</span>
+                  <span class="tech-tag">AI Image APIs</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Meal Planner & Caloric -->
+          <article class="project-card p-gradient-orange-red reveal delay-100">
+            <div class="project-content">
+              <div class="project-header">
+                <div>
+                  <h3 class="project-title">Meal Planner & Caloric</h3>
+                  <div class="platform-badges">
+                    <span class="badge">
+                      <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor">
+                        <path
+                          d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z" />
+                      </svg>
+                      iOS
+                    </span>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <!-- <a href="#" class="project-link-icon" aria-label="View on GitHub">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                      </path>
+                    </svg>
+                  </a> -->
+                  <!-- <a href="#" class="project-link-icon app-store" aria-label="View on App Store">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                      <path
+                        d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z" />
+                    </svg>
+                  </a> -->
+                </div>
+              </div>
+
+              <p class="project-desc">
+                Personalized nutrition and calorie tracking application with BMI calculation, nutrient analysis, and
+                dietary goal management.
+              </p>
+
+              <div class="project-footer">
+                <div class="features-box">
+                  <span class="features-label">Key Features</span>
+                  <ul class="features-list">
+                    <li class="feature-item"><span class="feature-dot"></span>BMI Calculation</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Calorie Tracking</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Meal Recommendations</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Nutrient Analysis</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Goal Management</li>
+                  </ul>
+                </div>
+
+                <div class="tech-tags">
+                  <span class="tech-tag">Swift</span>
+                  <span class="tech-tag">SwiftUI</span>
+                  <span class="tech-tag">Firebase</span>
+                  <span class="tech-tag">Nutrition APIs</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Mail for Gmail -->
+          <article class="project-card p-gradient-yellow-orange reveal">
+            <div class="project-content">
+              <div class="project-header">
+                <div>
+                  <h3 class="project-title">Mail for Gmail</h3>
+                  <div class="platform-badges">
+                    <span class="badge">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                      </svg>
+                      macOS
+                    </span>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <!-- <a href="#" class="project-link-icon" aria-label="View on GitHub">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                      </path>
+                    </svg>
+                  </a> -->
+                  <!-- <a href="#" class="project-link-icon app-store" aria-label="View on App Store">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                      <path
+                        d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z" />
+                    </svg>
+                  </a> -->
+                </div>
+              </div>
+
+              <p class="project-desc">
+                Native macOS Gmail menu bar application with inbox access, thread navigation, compose support, and
+                Google OAuth integration.
+              </p>
+
+              <div class="project-footer">
+                <div class="features-box">
+                  <span class="features-label">Key Features</span>
+                  <ul class="features-list">
+                    <li class="feature-item"><span class="feature-dot"></span>Gmail Access</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Thread Navigation</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Compose Mail</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Google OAuth</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Native macOS Experience</li>
+                  </ul>
+                </div>
+
+                <div class="tech-tags">
+                  <span class="tech-tag">Swift</span>
+                  <span class="tech-tag">SwiftUI</span>
+                  <span class="tech-tag">AppKit</span>
+                  <span class="tech-tag">Google APIs</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: SnoreIQ / Fasting App -->
+          <article class="project-card p-gradient-pink-rose reveal delay-100">
+            <div class="project-content">
+              <div class="project-header">
+                <div>
+                  <h3 class="project-title">SnoreIQ / Fasting App</h3>
+                  <div class="platform-badges">
+                    <span class="badge">
+                      <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor">
+                        <path
+                          d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z" />
+                      </svg>
+                      iOS
+                    </span>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <!-- <a href="#" class="project-link-icon" aria-label="View on GitHub">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                      </path>
+                    </svg>
+                  </a> -->
+                  <!-- <a href="#" class="project-link-icon app-store" aria-label="View on App Store">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                      <path
+                        d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z" />
+                    </svg>
+                  </a> -->
+                </div>
+              </div>
+
+              <p class="project-desc">
+                Worked on UI/UX improvements and feature enhancements for live App Store applications focused on snore
+                tracking, fasting, and ingredient analysis.
+              </p>
+
+              <div class="project-footer">
+                <div class="features-box">
+                  <span class="features-label">Key Features</span>
+                  <ul class="features-list">
+                    <li class="feature-item"><span class="feature-dot"></span>AI Snore Tracking</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Fasting Tracking</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Ingredient Scanner</li>
+                    <li class="feature-item"><span class="feature-dot"></span>UI/UX Revamp</li>
+                  </ul>
+                </div>
+
+                <div class="tech-tags">
+                  <span class="tech-tag">Swift</span>
+                  <span class="tech-tag">SwiftUI</span>
+                  <span class="tech-tag">UIKit</span>
+                  <span class="tech-tag">Firebase</span>
+                  <span class="tech-tag">Subscription Management</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <h2 class="section-title">Experience</h2>
+          <p class="section-subtitle">My professional journey in building robust iOS applications and delivering value.
+          </p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="experience-layout">
+          <!-- Timeline -->
+          <div class="timeline reveal">
+            <!-- Job 1: Pixster Studio -->
+            <div class="timeline-item">
+              <div class="timeline-period">Jun 2023 - Present</div>
+              <div class="timeline-content">
+                <span class="timeline-dot"></span>
+                <h3 class="timeline-role">iOS Developer</h3>
+                <h4 class="timeline-company">Pixster Studio</h4>
+                <p class="timeline-desc">Engineered and shipped multiple production iOS and macOS applications.</p>
+                <ul class="timeline-achievements">
+                  <li class="achievement-item"><span class="achievement-bullet"></span>Built AI-powered features
+                    including real-time translation and smart suggestions.</li>
+                  <li class="achievement-item"><span class="achievement-bullet"></span>Integrated Qonversion for
+                    subscriptions, trials, and receipt validation.</li>
+                  <li class="achievement-item"><span class="achievement-bullet"></span>Configured Firebase services
+                    including Auth, Firestore, Crashlytics, Analytics, and Cloud Functions.</li>
+                  <li class="achievement-item"><span class="achievement-bullet"></span>Implemented A/B testing and
+                    marketing attribution using Singular SDK and Meta Ads.</li>
+                  <li class="achievement-item"><span class="achievement-bullet"></span>Developed offline-first
+                    application experiences with local persistence.</li>
+                  <li class="achievement-item"><span class="achievement-bullet"></span>Managed App Store deployment
+                    workflows, TestFlight, and provisioning profiles.</li>
+                  <li class="achievement-item"><span class="achievement-bullet"></span>Collaborated with Figma design
+                    teams to improve UI/UX and retention.</li>
+                </ul>
+                <div class="timeline-tech">
+                  <span>Tech Stack:</span> Swift, SwiftUI, UIKit, Firebase, Qonversion, REST APIs, AI APIs, App Store
+                  Connect
+                </div>
+              </div>
+            </div>
+
+            <!-- Job 2: Yudiz Solutions -->
+            <div class="timeline-item">
+              <div class="timeline-period">Jan 2023 - Jun 2023</div>
+              <div class="timeline-content">
+                <span class="timeline-dot"></span>
+                <h3 class="timeline-role">iOS Developer Intern</h3>
+                <h4 class="timeline-company">Yudiz Solutions</h4>
+                <p class="timeline-desc">Collaborated within an agile iOS development team.</p>
+                <ul class="timeline-achievements">
+                  <li class="achievement-item"><span class="achievement-bullet"></span>Built UI components and
+                    navigation flows using Swift and UIKit.</li>
+                  <li class="achievement-item"><span class="achievement-bullet"></span>Worked with REST API integrations
+                    in production projects.</li>
+                  <li class="achievement-item"><span class="achievement-bullet"></span>Developed and tested multiple
+                    feature modules.</li>
+                </ul>
+                <div class="timeline-tech">
+                  <span>Tech Stack:</span> Swift, UIKit, REST APIs
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar Highlights -->
+          <div class="sidebar-container reveal delay-300">
+            <aside class="sidebar-card">
+              <h3 class="sidebar-title">Career Highlights</h3>
+              <div class="highlights-list">
+                <div class="highlight-row">
+                  <div class="highlight-icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="highlight-num">2+</div>
+                    <div class="highlight-text">Years Experience</div>
+                  </div>
+                </div>
+
+                <div class="highlight-row">
+                  <div class="highlight-icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="8" r="7"></circle>
+                      <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="highlight-num">10+</div>
+                    <div class="highlight-text">Apps Shipped</div>
+                  </div>
+                </div>
+
+                <div class="highlight-row">
+                  <div class="highlight-icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="3" width="12" height="14" rx="2"></rect>
+                      <line x1="8" y1="21" x2="8.01" y2="21"></line>
+                      <rect x="16" y="8" width="6" height="12" rx="2"></rect>
+                      <line x1="19" y1="16" x2="19.01" y2="16"></line>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="highlight-num">iOS & macOS</div>
+                    <div class="highlight-text">Apple Ecosystem</div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education bg-dark-alt" id="education">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">My academic background and qualifications.</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="education-grid">
+          <!-- Degree 1: M.Sc. IT -->
+          <article class="education-card reveal">
+            <div class="education-glow"></div>
+            <div class="education-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+              </svg>
+            </div>
+            <h3 class="education-degree">M.Sc. Information Technology</h3>
+            <h4 class="education-college">GLS University</h4>
+
+            <div class="education-details">
+              <div class="edu-meta">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>2023</span>
+              </div>
+              <div class="edu-meta">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Ahmedabad</span>
+              </div>
+              <span class="percentage-badge">79%</span>
+            </div>
+          </article>
+
+          <!-- Degree 2: BCA -->
+          <article class="education-card reveal delay-200">
+            <div class="education-glow"></div>
+            <div class="education-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+              </svg>
+            </div>
+            <h3 class="education-degree">Bachelor of Computer Applications</h3>
+            <h4 class="education-college">JG College of Computer Applications, Gujarat University</h4>
+
+            <div class="education-details">
+              <div class="edu-meta">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>2021</span>
+              </div>
+              <div class="edu-meta">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Ahmedabad</span>
+              </div>
+              <span class="percentage-badge">81%</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Proficiency Section -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <h2 class="section-title">Technical Proficiency</h2>
+          <p class="section-subtitle">A comprehensive overview of my technical skills, tools, and areas of expertise in
+            the Apple ecosystem.</p>
+          <div class="section-line"></div>
+        </div>
+
+        <!-- Skill Bars Grid -->
+        <div class="skills-bars-grid">
+          <!-- Languages & Frameworks -->
+          <div class="skills-category-card reveal">
+            <h3 class="skills-category-title">Languages & Frameworks</h3>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-labels">
+                <span class="skill-name">Swift</span>
+                <span class="skill-pct">95%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill animate-bar" data-width="95%"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-labels">
+                <span class="skill-name">SwiftUI</span>
+                <span class="skill-pct">95%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill animate-bar" data-width="95%"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-labels">
+                <span class="skill-name">UIKit</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill animate-bar" data-width="88%"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-labels">
+                <span class="skill-name">Combine</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill animate-bar" data-width="82%"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-labels">
+                <span class="skill-name">Objective-C</span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill animate-bar" data-width="70%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend & Tools -->
+          <div class="skills-category-card reveal delay-200">
+            <h3 class="skills-category-title">Backend & Tools</h3>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-labels">
+                <span class="skill-name">Firebase Auth & Firestore</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill animate-bar" data-width="90%"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-labels">
+                <span class="skill-name">Xcode & TestFlight</span>
+                <span class="skill-pct">95%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill animate-bar" data-width="95%"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-labels">
+                <span class="skill-name">Git & Version Control</span>
+                <span class="skill-pct">92%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill animate-bar" data-width="92%"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-labels">
+                <span class="skill-name">Crashlytics & Analytics</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill animate-bar" data-width="85%"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-labels">
+                <span class="skill-name">Postman & API Testing</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill animate-bar" data-width="85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tag Categories Grid -->
+        <div class="skills-tags-grid">
+          <!-- APIs & SDKs -->
+          <div class="skills-tag-category reveal">
+            <h4>APIs & SDKs</h4>
+            <div class="tags-flex">
+              <span class="tag">Spotify API</span>
+              <span class="tag">Google APIs</span>
+              <span class="tag">YouTube API</span>
+              <span class="tag">Amazon Music API</span>
+              <span class="tag">Qonversion</span>
+              <span class="tag">Singular SDK</span>
+              <span class="tag">Meta Ads</span>
+            </div>
+          </div>
+
+          <!-- Core Expertise -->
+          <div class="skills-tag-category reveal delay-100">
+            <h4>Core Expertise</h4>
+            <div class="tags-flex">
+              <span class="tag">AI Integration</span>
+              <span class="tag">App Store Deployment</span>
+              <span class="tag">Subscription Management</span>
+              <span class="tag">Performance Optimization</span>
+              <span class="tag">Offline Support</span>
+              <span class="tag">A/B Testing</span>
+            </div>
+          </div>
+
+          <!-- Platforms -->
+          <div class="skills-tag-category reveal delay-200">
+            <h4>Platforms</h4>
+            <div class="tags-flex">
+              <span class="tag">iOS</span>
+              <span class="tag">macOS</span>
+              <span class="tag">Apple Ecosystem</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-info-only reveal">
+          <!-- Contact info (no form) -->
+          <!-- Section Header -->
+          <div class="section-header" style="margin-bottom: 0;">
+            <h2 class="section-title">Let's Build Something Amazing Together.</h2>
+            <p class="section-subtitle" style="margin-top: 16px;">Currently open for new opportunities. Whether you have
+              a question or just want to say hi, I'll try my best to get back to you!</p>
+            <div class="section-line"></div>
+          </div>
+
+          <!-- Channels -->
+          <div class="contact-channels">
+            <!-- Email -->
+            <a href="mailto:khokharsajid166@gmail.com" class="contact-card">
+              <div class="contact-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-card-label">Email</div>
+                <div class="contact-card-value">khokharsajid166@gmail.com</div>
+              </div>
+            </a>
+
+            <!-- Phone -->
+            <a href="tel:+917016817437" class="contact-card">
+              <div class="contact-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-card-label">Phone</div>
+                <div class="contact-card-value">+91 70168 17437</div>
+              </div>
+            </a>
+
+            <!-- Location -->
+            <div class="contact-card">
+              <div class="contact-icon-box" style="cursor: default;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-card-label">Location</div>
+                <div class="contact-card-value">Ahmedabad, Gujarat, India</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/sajid-khokhar-8a3461150" target="_blank" rel="noopener noreferrer"
+              class="social-icon-btn linkedin" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-btn github" aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-copyright" id="footer-year-target">
+        &copy; 2026 Sajid Khokhar. All rights reserved.
+      </div>
+      <div class="footer-designer">
+        Designed & Built with <span class="heart-icon">&hearts;</span>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Vanilla Javascript File -->
+  <script src="script.js"></script>
+</body>
+
+</html>
