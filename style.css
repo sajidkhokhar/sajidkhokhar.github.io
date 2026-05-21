@@ -1517,3 +1517,267 @@ section {
   color: #0077b5;
   transform: translate(2px, -2px);
 }
+
+/* =============================================================
+   ENHANCEMENT LAYER — Reflective UI, Motion & Interactivity
+   Subtle, Apple-style polish for desktop & mobile.
+   ============================================================= */
+
+/* ---- Animated Background FX Layer ---- */
+.bg-fx {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.fx-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.55;
+  will-change: transform;
+}
+
+.fx-orb-1 {
+  width: 460px;
+  height: 460px;
+  top: -120px;
+  left: -110px;
+  background: radial-gradient(circle, rgba(0, 122, 255, 0.22) 0%, transparent 70%);
+  animation: orb-drift-1 26s ease-in-out infinite;
+}
+
+.fx-orb-2 {
+  width: 560px;
+  height: 560px;
+  top: 38%;
+  right: -200px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.18) 0%, transparent 70%);
+  animation: orb-drift-2 32s ease-in-out infinite;
+}
+
+.fx-orb-3 {
+  width: 420px;
+  height: 420px;
+  bottom: -160px;
+  left: 28%;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.14) 0%, transparent 70%);
+  animation: orb-drift-3 38s ease-in-out infinite;
+}
+
+@keyframes orb-drift-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(110px, 90px) scale(1.18); }
+}
+
+@keyframes orb-drift-2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-150px, 70px) scale(1.12); }
+}
+
+@keyframes orb-drift-3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(90px, -110px) scale(1.22); }
+}
+
+.fx-grid {
+  position: absolute;
+  inset: -10%;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.022) 1px, transparent 1px);
+  background-size: 58px 58px;
+  -webkit-mask-image: radial-gradient(ellipse 65% 55% at 50% 38%, #000 25%, transparent 78%);
+  mask-image: radial-gradient(ellipse 65% 55% at 50% 38%, #000 25%, transparent 78%);
+  animation: grid-pan 42s linear infinite;
+}
+
+@keyframes grid-pan {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(58px); }
+}
+
+/* Let background FX glow faintly through dark-alt sections */
+.bg-dark-alt {
+  background-color: rgba(16, 16, 18, 0.72);
+}
+
+/* ---- Scroll Progress Indicator ---- */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  z-index: 200;
+  background: linear-gradient(90deg, var(--accent), #8b5cf6, #60a5fa);
+  box-shadow: 0 0 12px rgba(0, 122, 255, 0.55);
+  transition: width 0.12s linear;
+}
+
+/* ---- Hero Intro Animation ---- */
+.hero-badge,
+.hero-title,
+.hero-desc,
+.hero-actions {
+  opacity: 0;
+  transform: translateY(26px);
+  animation: hero-in 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.hero-badge { animation-delay: 0.15s; }
+.hero-title { animation-delay: 0.3s; }
+.hero-desc { animation-delay: 0.45s; }
+.hero-actions { animation-delay: 0.6s; }
+
+@keyframes hero-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animated shimmer across the hero gradient text */
+.hero-gradient-text {
+  background: linear-gradient(90deg, #ffffff 0%, #6b6b78 45%, #ffffff 90%);
+  background-size: 220% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-shimmer 7s linear infinite;
+}
+
+@keyframes text-shimmer {
+  to { background-position: 220% center; }
+}
+
+/* ---- Reflective Gloss on Cards ---- */
+.project-card,
+.skill-card,
+.education-card,
+.skills-category-card,
+.sidebar-card {
+  position: relative;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.07);
+}
+
+.skill-card,
+.skills-category-card {
+  overflow: hidden;
+}
+
+/* Brighter reflective top edge + depth shadow on hover */
+.project-card:hover {
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.14),
+    0 24px 48px rgba(0, 0, 0, 0.45);
+}
+
+.skill-card:hover,
+.education-card:hover,
+.skills-category-card:hover {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14);
+}
+
+/* ---- Interactive 3D Tilt + Cursor Glow ---- */
+.projects-grid,
+.core-skills-grid,
+.education-grid,
+.skills-bars-grid {
+  perspective: 1400px;
+}
+
+.tilt-card {
+  isolation: isolate;
+  will-change: transform;
+}
+
+/* Fast, responsive tilt while hovering; smooth settle-back on leave
+   (the card's existing reveal transition handles the return). */
+.tilt-card:hover {
+  transition: transform 0.15s ease-out,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.tilt-glow {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none;
+  background: radial-gradient(340px circle at var(--mx, 50%) var(--my, 50%),
+      rgba(0, 122, 255, 0.20) 0%,
+      transparent 62%);
+  transition: opacity 0.35s ease;
+}
+
+.tilt-card:hover .tilt-glow {
+  opacity: 1;
+}
+
+/* ---- Contact Card Glow Accent ---- */
+.contact-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.contact-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(220px circle at var(--mx, 50%) var(--my, 50%),
+      rgba(0, 122, 255, 0.12) 0%,
+      transparent 65%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+.contact-card:hover::before {
+  opacity: 1;
+}
+
+/* ---- Reduced Motion Preferences ---- */
+@media (prefers-reduced-motion: reduce) {
+
+  .fx-orb,
+  .fx-grid,
+  .hero-gradient-text,
+  .badge-dot {
+    animation: none !important;
+  }
+
+  .hero-badge,
+  .hero-title,
+  .hero-desc,
+  .hero-actions {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+
+  .project-card:hover::after,
+  .skill-card:hover::after,
+  .education-card:hover::after,
+  .skills-category-card:hover::after {
+    animation: none !important;
+  }
+
+  .reveal {
+    transition-duration: 0.01ms !important;
+  }
+
+  .tilt-card {
+    transition: none !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
