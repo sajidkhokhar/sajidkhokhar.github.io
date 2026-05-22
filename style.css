@@ -57,6 +57,13 @@ body {
   line-height: 1.6;
 }
 
+/* Sit above the bg-fx layer (z-index: 0) so content is always on top */
+main,
+.footer {
+  position: relative;
+  z-index: 1;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -1385,6 +1392,9 @@ section {
   font-size: 18px;
   font-weight: 500;
   color: white;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  min-width: 0; /* allow flex item to shrink below content size */
 }
 
 .social-links {
@@ -1527,7 +1537,7 @@ section {
 .bg-fx {
   position: fixed;
   inset: 0;
-  z-index: -1;
+  z-index: 0;          /* was -1; mobile Safari buries -1 behind body's paint layer */
   overflow: hidden;
   pointer-events: none;
 }
@@ -1723,14 +1733,26 @@ section {
 .contact-card {
   position: relative;
   overflow: hidden;
-  isolation: isolate;
+  /* NOTE: do NOT use isolation:isolate here — combined with ::before z-index and
+     overflow:hidden it can swallow touch events on mobile Safari. */
+
+  /* Remove iOS 300ms tap delay and default blue flash on all cards */
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Pointer cursor only on actual link cards */
+a.contact-card {
+  cursor: pointer;
 }
 
 .contact-card::before {
   content: '';
   position: absolute;
   inset: 0;
-  z-index: -1;
+  /* Use z-index: 0 (not -1) — the glow sits behind card children via
+     normal stacking order, no isolation trick needed. */
+  z-index: 0;
   background: radial-gradient(220px circle at var(--mx, 50%) var(--my, 50%),
       rgba(0, 122, 255, 0.12) 0%,
       transparent 65%);
@@ -1739,8 +1761,64 @@ section {
   pointer-events: none;
 }
 
+/* Lift card children above the ::before glow layer */
+.contact-icon-box,
+.contact-card > div,
+.contact-card-arrow {
+  position: relative;
+  z-index: 1;
+}
+
+/* Icon box must never stretch — keep it as a fixed-size circle */
+.contact-icon-box {
+  flex: 0 0 auto;   /* do not grow, do not shrink, use explicit width/height */
+}
+
+/* Text column gets all remaining space and wraps long content (e.g. email) */
+.contact-card > div:not(.contact-icon-box) {
+  min-width: 0;
+  flex: 1 1 0;
+}
+
 .contact-card:hover::before {
   opacity: 1;
+}
+
+/* ---- Mobile Contact Section Improvements ---- */
+@media (max-width: 480px) {
+  .contact-channels {
+    gap: 12px;
+    margin-top: 32px;
+  }
+
+  /* Tighter card on small screens; min-height 56px = Apple HIG 44px tap target + padding */
+  .contact-card {
+    gap: 14px;
+    padding: 12px 14px;
+    min-height: 56px;
+    border-radius: 14px;
+  }
+
+  /* Shrink icon box to 44px (minimum recommended tap size) */
+  .contact-icon-box {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+  }
+
+  /* Smaller value text so long email / phone fits on one line */
+  .contact-card-value {
+    font-size: 13px;
+  }
+
+  .contact-card-label {
+    font-size: 11px;
+  }
+
+  /* Hide the LinkedIn arrow on very small screens to save space */
+  .contact-card-arrow {
+    display: none;
+  }
 }
 
 /* ---- Reduced Motion Preferences ---- */
