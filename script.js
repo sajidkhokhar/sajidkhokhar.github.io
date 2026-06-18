@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // -------------------------------------------------------------
   if (!reduceMotion && canHover) {
     const tiltCards = document.querySelectorAll(
-      '.project-card, .skill-card, .education-card, .skills-category-card'
+      '.project-card, .skill-card, .education-card, .skills-category-card, .resume-preview-card'
     );
     const MAX_TILT = 6;
 
@@ -252,5 +252,44 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // -------------------------------------------------------------
+  // 13. Resume Modal Viewer Control
+  // -------------------------------------------------------------
+  const modal = document.getElementById('resume-modal');
+  const closeBtn = document.getElementById('resume-modal-close');
+  const overlay = document.getElementById('resume-modal-overlay');
+  const triggerBtns = document.querySelectorAll('.trigger-resume-modal');
+
+  const openModal = (e) => {
+    if (e) e.preventDefault();
+    if (modal) {
+      modal.classList.add('active');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+  };
+
+  const closeModal = () => {
+    if (modal) {
+      modal.classList.remove('active');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+  };
+
+  triggerBtns.forEach(btn => {
+    btn.addEventListener('click', openModal);
+  });
+
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+  if (overlay) overlay.addEventListener('click', closeModal);
+
+  // Close modal on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
 
 });
